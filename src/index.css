@@ -241,6 +241,10 @@ header h1 {
   color: #3a2353;
 }
 
+#summary p {
+  text-align: center;
+}
+
 #summary ol {
   list-style: none;
   margin: 2rem auto;
@@ -250,6 +254,28 @@ header h1 {
 
 #summary li {
   margin: 2rem 0;
+}
+
+#summary button {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 0.9rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 24px;
+  background: #6cb7f5;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#summary button:hover,
+#summary button:focus {
+  /* background: linear-gradient(180deg, #bf48f6 0%, #9b50f2 100%); */
+  background: #9d5af5;
+  color: white;
+  /* box-shadow: 0 0 4px 2px rgba(255, 200, 60, 0.8); */
 }
 
 #summary h3 {
@@ -280,11 +306,11 @@ header h1 {
 }
 
 #summary .user-answer.correct {
-  color: #054e37;
+  color: #00724e;
 }
 
 #summary .user-answer.wrong {
-  color: #730b4b;
+  color: #ad0000;
 }
 
 #summary .user-answer.skipped {
