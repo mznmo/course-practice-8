@@ -6,7 +6,7 @@ import Summary from "./Summary";
 export default function Quiz() {
   const [userAnswers, setUserAnswers] = useState([]);
   const [restartButtonText, setRestartButtonText] = useState("Retry Quiz");
-  const [restartButtonCount, setRestartButtonCount] = useState(5000);
+  const [restartButtonCount, setRestartButtonCount] = useState();
 
   const activeQuestion = userAnswers.length;
   const isOver = activeQuestion === QUESTIONS.length;
